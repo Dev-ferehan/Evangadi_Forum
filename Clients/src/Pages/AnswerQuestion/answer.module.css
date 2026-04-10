@@ -1,0 +1,145 @@
+/* AnswerQuestion.module.css */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Question Header Section */
+.headerSection {
+  margin-bottom: 40px;
+}
+
+.sectionLabel {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #212529;
+}
+
+.questionTitle {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fe8402; /* Evangadi Orange */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fe8402;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.questionIcon {
+  margin-right: 10px;
+  background-color: #516cf0;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 1.2rem;
+}
+
+.questionDescription {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Answers Section */
+.communityHeader {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.answerList {
+  margin-top: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.answerItem {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  text-align: center;
+}
+
+.avatarCircle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #3b455a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.avatarIcon {
+  font-size: 28px;
+  color: #3b455a;
+}
+
+.userName {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.answerText {
+  flex: 1;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Post Answer Form */
+.postAnswerSection {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.successMessage {
+  color: #28a745;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.answerInput {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+  min-height: 150px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.postButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  float: left;
+}
+
+.postButton:hover {
+  background-color: #0069d9;
+}

@@ -17,7 +17,7 @@ function Register() {
   const [showPassword, setShowPassword] = useState(false);
   const [type, setType] = useState("password");
 
-  // This handles the logic safely
+
   const toggleVisibility = () => {
     setType(showPassword ? "text" : "password");
     setShowPassword(!showPassword);
@@ -42,11 +42,11 @@ function Register() {
     }
 
     try {
-      console.log(userNameValue);
-      console.log(firstNameValue);
-      console.log(lastNameValue);
-      console.log(emailValue);
-      console.log(passwordValue);
+      // console.log(userNameValue);
+      // console.log(firstNameValue);
+      // console.log(lastNameValue);
+      // console.log(emailValue);
+      // console.log(passwordValue);
       await axios.post("/users/register", {
         userName: userNameValue,
         firstName: firstNameValue,
@@ -142,7 +142,7 @@ function Register() {
             </div>
           </section>
 
-          {/* Right Section: Info/Sidebar */}
+          {/* Right Section */}
           <section
             className={classes.infoSection}
             style={{
@@ -164,7 +164,7 @@ function Register() {
               </p>
               <div className={classes.footerInfo}>
                 <div className={classes.avatarGroup}>
-                  {/* Placeholder avatars */}
+                
                   <div className={classes.avatar}></div>
                   <div className={classes.avatar}></div>
                   <div className={classes.avatar}></div>

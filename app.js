@@ -24,7 +24,7 @@ console.log("database connection established")
 app.listen(port,(req,res)=>{
     console.log(`listening on port,${port}`)
     })
-console.log(result)
+// console.log(result)
 }catch(error){
 console.log(error.message)
 }

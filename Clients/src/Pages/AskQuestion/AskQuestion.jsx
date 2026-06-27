@@ -35,7 +35,6 @@ const AskQuestion = () => {
     } catch (err) {
       setError(err?.response?.data?.msg);
 
-      console.log(error);
     }
   }
 

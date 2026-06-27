@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import classes from "./answer.module.css";
 import axiosConfig from "../../axios/axiosConfig";
 import { MdAccountCircle, MdArrowForward } from "react-icons/md";
+import { IoArrowBackCircleSharp } from "react-icons/io5";
 import { useEffect } from "react";
 import { useState } from "react";
 const AnswerQuestion = () => {
@@ -28,7 +29,7 @@ const token = localStorage.getItem("token");
       return datas?.data?.singlequestion;
     }catch(error){
 setError(error?.response?.data?.msg)
-console.log(error?.response?.data?.msg)
+// console.log(error?.response?.data?.msg)
     }
    
   }
@@ -76,7 +77,7 @@ const token = localStorage.getItem("token");
       answerDesc.current.value = "";
     } 
     catch (error) {
-      console.log(error?.response?.data?.msg);
+      // console.log(error?.response?.data?.msg);
       setError(error?.response?.data?.msg)
 
     }
@@ -90,11 +91,13 @@ const token = localStorage.getItem("token");
       <section className={classes.headerSection}>
         <h2 className={classes.sectionLabel}>Question</h2>
         <div className={classes.questionTitle}>
-          <MdArrowForward className={classes.questionIcon} />
+        <a href={'/'}>
+        <IoArrowBackCircleSharp  className={classes.questionIcon} />
+        </a>
           {question?.title}
         </div>
         <p className={classes.questionDescription}>
-          {/* How does Authentication work in express.js app with JWT? */}
+        
           {question?.description}
         </p>
       </section>
@@ -121,7 +124,7 @@ const token = localStorage.getItem("token");
       
   
 
-      {/* Reply Form */}
+  
       <section className={classes.postAnswerSection}>
         <div className={classes.successMessage} style={{color:'red'}} >{error}</div>
         <div className={classes.successMessage}>{sucess}</div>

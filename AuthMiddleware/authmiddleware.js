@@ -8,8 +8,8 @@ async function authmiddleware(req,res,next){
         return res.status(StatusCodes.UNAUTHORIZED).json({msg:"invalid Authentication"})
     }
     const token=authheader.split(' ')[1]
-    console.log(token)
-    console.log(authheader)
+    // console.log(token)
+    // console.log(authheader)
     try{
         const {userName,userId}=jwt.verify(token,process.env.JWT_SECURE)
         req.user={userName,userId}               

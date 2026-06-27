@@ -11,7 +11,7 @@ const Login = () => {
 
 const [showPassword, setShowPassword] = useState(false);
 const [type,setType]=useState('password')
-  // This handles the logic safely
+
   const toggleVisibility = () => {
     setType( showPassword ? 'text': 'password')
     setShowPassword(!showPassword);
@@ -33,7 +33,7 @@ const [type,setType]=useState('password')
       navigate("/");
     } catch (error) {
       setErr(error?.response?.data?.msg)
-      console.log(error);
+      // console.log(error);
     }
   }
   return (
@@ -72,7 +72,7 @@ const [type,setType]=useState('password')
             </p>
           </div>        
         </div>
-        {/* Right Side: Hero Branding */}
+        {/* Right Side*/}
         <div className={classes.heroSection}>
           <div className={classes.overlay}>
             <div className={classes.heroContent}>

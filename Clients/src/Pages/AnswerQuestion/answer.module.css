@@ -1,4 +1,4 @@
-/* AnswerQuestion.module.css */
+
 .container {
   max-width: 1000px;
   margin: 40px auto;
@@ -24,7 +24,7 @@
   align-items: center;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #fe8402; /* Evangadi Orange */
+  color: #fe8402; 
   margin-bottom: 10px;
   border-bottom: 2px solid #fe8402;
   display: inline-block;
@@ -33,13 +33,15 @@
 
 .questionIcon {
   margin-right: 10px;
-  background-color: #516cf0;
+  background-color: #3e5df8;
   color: white;
   border-radius: 50%;
   padding: 2px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
-
+.questionIcon:hover{
+  color:#000625;
+}
 .questionDescription {
   font-size: 1rem;
   color: #333;

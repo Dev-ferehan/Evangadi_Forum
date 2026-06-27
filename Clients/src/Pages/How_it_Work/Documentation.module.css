@@ -1,4 +1,3 @@
-/* ዋናው ኮንቴይነር */
 .container {
   max-width: 800px;
   margin: 40px auto;
@@ -9,7 +8,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ርዕሱ */
+
 .title {
   color: #2c3e50;
   font-size: 2rem;
@@ -19,13 +18,13 @@
   padding-bottom: 10px;
 }
 
-/* የጽሑፍ ይዘቱ የሚቀመጥበት ቦታ */
+
 .docContent {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #34495e;
   
-  /* ዋናው ነጥብ፡ በ .txt ፋይሉ ውስጥ ያሉትን ክፍተቶች (Spaces/Enters) ለመጠበቅ */
+
   white-space: pre-wrap; 
   word-wrap: break-word;
   
@@ -35,15 +34,25 @@
   border-radius: 4px;
 }
 
-/* በመጫን ላይ (Loading) እያለ የሚታይ ስታይል */
+
 .loading {
   text-align: center;
   font-style: italic;
   color: #7f8c8d;
   margin-top: 50px;
 }
+.docHeader{
+  display: flex;
+  align-items: center;
+}
+.docHeader a {
+margin-right: 20px;
+font-size: xx-large;
+}
+.docHeader a:active{
+  color: rgb(117, 117, 250);
+}
 
-/* ለሞባይል ስልኮች የሚሆን ማስተካከያ (Responsive) */
 @media (max-width: 768px) {
   .container {
     margin: 15px;

@@ -4,13 +4,20 @@ import footer_logo from '../../assets/footerLogo.png'
 // If using FontAwesome, ensure you have the library installed/linked
 import { FaFacebookF, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';
 
+
 const Footer = () => {
   return (
-    <footer className={classes.footer_outer}>
+    <footer className={classes.footer_wrapper}>
+    <div className={classes.footer_outer}>
+  
+
+
+    
       <div className={classes.footer_inner}>
         
         {/* Left Section: Logo */}
         <div className={classes.footer_logo}>
+     
           <img src={footer_logo} alt="Evangadi Logo" />
         </div>
 
@@ -30,8 +37,10 @@ const Footer = () => {
           <a href="#"><i className="fab fa-youtube">< FaYoutube/></i></a>
           <a href="#"><i className="fab fa-tiktok"><FaTiktok/></i></a>
         </div>
-
+      <p>© 2026 Evangadi. Developed by <a href="#" >Ferehan Ahmed</a></p>
+      
       </div>
+    </div>
     </footer>
   );
 };

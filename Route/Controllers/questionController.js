@@ -21,7 +21,7 @@ async function askQuestion(req, res) {
     );
     return res.status(201).json({ msg: "Question asked successfully" });
   } catch (error) {
-    console.error(error);
+    // console.error(error);
     return res
       .status(500)
       .json({ msg: "Something went wrong, try again later" });
@@ -49,7 +49,7 @@ async function singleQuestion(req, res) {
   }
   return res.status(200).json({ singlequestion});}
   catch(error){
-    console.log(error.message);
+    // console.log(error.message);
     return res.status(500).json({ msg: "some thing went wrong" });
   }
 }

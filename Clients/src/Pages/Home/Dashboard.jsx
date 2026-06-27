@@ -21,7 +21,9 @@ const token = localStorage.getItem("token");
     return questions.data;
     // console.log(questions)
   } catch (error) {
-    console.error("Error fetching questions:", error);}}
+    console.error("Error fetching questions:", error);
+  }
+  }
 function Dashboard() {
   
   const [question, setQuestion] = useState([]);
@@ -33,7 +35,7 @@ setLogin(true)
 
       if (data) {
         setQuestion(data?.questions);
-        console.log("Fetched Data:", data);
+        // console.log("Fetched Data:", data);
       }
     };
     getQuestion();

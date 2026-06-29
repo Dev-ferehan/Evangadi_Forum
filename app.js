@@ -5,7 +5,7 @@ const userRouter=require('./Route/userRoute')
 const questionRouter = require('./Route/questionRoute')
 const answerRoute=require('./Route/answerRoute')
 const dbconnection=require('./db/dbConfig')
-const authmiddleware=require('./AuthMiddleware/authmiddleware')
+const authMiddleware=require('./AuthMiddleware/authmiddleware')
 const cors =require('cors')
 const app=express()
 
@@ -15,8 +15,8 @@ app.use(cors())
 
 app.use(express.json())
 app.use('/api/users/',userRouter)
-app.use('/api/questions/',authmiddleware,questionRouter)
-app.use('/api/answer/',authmiddleware,answerRoute)
+app.use('/api/questions/',authMiddleware,questionRouter)
+app.use('/api/answer/',authMiddleware,answerRoute)
 
 async function start(){
 try{

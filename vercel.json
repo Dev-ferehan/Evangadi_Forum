@@ -3,13 +3,25 @@
   "builds": [
     {
       "src": "app.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "Clients/dist/**",
+          "AuthMiddleware/**",
+          "Route/**",
+          "db/**"
+        ]
+      }
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "Clients/dist/$1"
     }
   ]
 }

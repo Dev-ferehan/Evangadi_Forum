@@ -3,6 +3,7 @@ const dbconnection=mysql.createPool({
     user:process.env.USER,
     database:process.env.DATABASE,
     host:process.env.HOST,
+    port: process.env.DB_PORT || 3306,
     password:process.env.PASSWORD,
     connectionLimit:'10'
 });

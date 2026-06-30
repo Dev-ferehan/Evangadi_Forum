@@ -2,7 +2,7 @@ import React, {  useRef, useState } from "react";
 import classes from "./askquestion.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import axiosConfig from "../../axios/axiosConfig";
-import Layout from "../../Layout/layout";
+import Layout from "../../Layout/Layout";
 import { AppState } from "../../AppStateCtx";
 const token = localStorage.getItem("token");
 const AskQuestion = () => {

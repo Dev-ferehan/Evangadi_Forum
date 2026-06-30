@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import classes from "./login.module.css";
-import Layout from "../../Layout/layout";
+import Layout from "../../Layout/Layout";
 import axios from "../../axios/axiosConfig";
 const Login = () => {
   const [err,setErr]=useState()

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import classes from "./register.module.css";
 import axios from "../../axios/axiosConfig";
 import sidebarImage from "../../assets/10001.png";
-import Layout from "../../Layout/layout";
+import Layout from "../../Layout/Layout";
 
 function Register() {
   const [err, seterr] = useState();

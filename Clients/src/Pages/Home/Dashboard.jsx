@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axiosConfig from "../../axios/axiosConfig";
-import Layout from "../../Layout/layout";
+import Layout from "../../Layout/Layout";
 
 async function getQuestions() {
 const token = localStorage.getItem("token");

@@ -11,7 +11,7 @@ import { AppState } from "./AppStateCtx";
 import AskQuestion from "./Pages/AskQuestion/AskQuestion";
 import AnswerQuestion from "./Pages/AnswerQuestion/AnswerQuestion";
 import HowItWorks from "./Pages/How_it_Work/HowItWorks";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 function App() {
   const [user, setUser] = useState({});
     const [islogin ,setLogin]=useState(false)

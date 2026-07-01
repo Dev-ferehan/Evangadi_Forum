@@ -24,7 +24,7 @@ async function start() {
     console.log("database connection established");
     
     app.get('/', (req, res) => {
-      return res.status(200).send(`<h1> success! </h1>`);
+      // return res.status(200).send(`<h1> success! </h1>`);
   });
 
     app.listen(port, (req, res) => {

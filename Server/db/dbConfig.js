@@ -7,12 +7,12 @@ const dbconnection=mysql.createPool({
     password:process.env.PASSWORD,
     connectionLimit:'10'
 });
-// dbconnection.execute("select 'text'",(err,result)=>{
-//     if (err){
-//         console.log(err)
-//     }else{
-//         console.log(result)
-//     }
-// })
+dbconnection.execute("select 'text'",(err,result)=>{
+    if (err){
+        console.log(err)
+    }else{
+        console.log(result)
+    }
+})
 
 module.exports=dbconnection.promise()

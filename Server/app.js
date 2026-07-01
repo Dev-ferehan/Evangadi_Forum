@@ -22,12 +22,19 @@ async function start() {
   try {
     const result = await dbconnection.execute("select 'test' ");
     console.log("database connection established");
+    
+    app.get('/', (req, res) => {
+      return res.status(200).send(`<h1> success! </h1>`);
+  });
+
     app.listen(port, (req, res) => {
       console.log(`listening on port,${port}`);
+
     });
     // console.log(result)
   } catch (error) {
     console.log(error.message);
+    console.log("Error starting the application:");
     
   }
 }
